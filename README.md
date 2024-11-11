@@ -7,14 +7,15 @@
 <br>
 
 ## 👩‍💻 멤버 👩‍💻
-🐶 [@comgongdaeng](https://github.com/comgongdaeng)
+🐻 kuma([@eonwy](https://github.com/eonwy))
 
-🐻 [@eonwy](https://github.com/eonwy)
+🐶 maru([@comgongdaeng](https://github.com/comgongdaeng))
+
 
 <br>
 
 
 ## 📝 규칙 📝
-1. 이 레포지토리를 `fork` 하여, `Github ID` 폴더를 생성한다.
+1. 이 레포지토리를 `fork` 하여, `Github ID` 혹은 `닉네임`으로 폴더를 생성한다.
 2. 해당 폴더 아래 강의를 들으며 메모한 내용을 적은 `마크다운 파일`과 `실습파일`을 업로드한다.
 3. 기한 내 `[스프링 입문 스터디]` 이름으로 PR을 만든다.

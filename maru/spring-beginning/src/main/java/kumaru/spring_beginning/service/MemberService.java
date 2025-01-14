@@ -3,12 +3,16 @@ package kumaru.spring_beginning.service;
 import kumaru.spring_beginning.domain.Member;
 import kumaru.spring_beginning.repository.MemberRepository;
 import kumaru.spring_beginning.repository.MemoryMemberRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
+@Service
 public class MemberService {
 
+    @Autowired
     public MemberService(MemberRepository memberRepository) {
         this.memberRepository = memberRepository;
     }

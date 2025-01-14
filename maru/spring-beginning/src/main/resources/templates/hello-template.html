@@ -1,0 +1,9 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<p th:text="'hello ' + ${name}">hello! empty</p>
+<!--hello! empty 부분은, 서버 연결이 되지 않았을 때 나타남.
+타임리프의 특징.
+템플릿 엔진으로서 동작할 때는 th:text 부분으로 치환됨.
+-->
+</body>
+</html>

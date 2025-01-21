@@ -1,6 +1,7 @@
 package kumaru.spring_beginning;
 
 import jakarta.persistence.EntityManager;
+import kumaru.spring_beginning.aop.TimeTraceAop;
 import kumaru.spring_beginning.repository.*;
 import kumaru.spring_beginning.service.MemberService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -39,6 +40,12 @@ public class SpringConfig {
 //        return new MemberService(memberRepository());
         return new MemberService(memberRepository);
     }
+
+////    AOP의 경우 @Component annotaion보다 스프링빈에 직접 등록해 사용하는 것이 권장됨.
+//    @Bean
+//    public TimeTraceAop timeTraceAop() {
+//        return new TimeTraceAop();
+//    }
 
 //    @Bean
 //    public MemberRepository memberRepository() {

@@ -33,6 +33,7 @@ public class MemberService {
 //        }));
 
 //        ctrl + T => 리팩토링 가능
+
         validateDuplicateMember(member);
         memberRepository.save(member);
         return member.getId();

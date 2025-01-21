@@ -1,5 +1,6 @@
 package kumaru.spring_beginning.service;
 
+import jakarta.transaction.Transactional;
 import kumaru.spring_beginning.domain.Member;
 import kumaru.spring_beginning.repository.MemberRepository;
 import kumaru.spring_beginning.repository.MemoryMemberRepository;
@@ -9,6 +10,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 
+@Transactional
 public class MemberService {
 
     public MemberService(MemberRepository memberRepository) {

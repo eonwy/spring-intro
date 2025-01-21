@@ -1,6 +1,7 @@
 package kumaru.spring_beginning;
 
 import kumaru.spring_beginning.repository.JdbcMemberRepository;
+import kumaru.spring_beginning.repository.JdbcTemplateMemberRepository;
 import kumaru.spring_beginning.repository.MemberRepository;
 import kumaru.spring_beginning.repository.MemoryMemberRepository;
 import kumaru.spring_beginning.service.MemberService;
@@ -30,6 +31,7 @@ public class SpringConfig {
     @Bean
     public MemberRepository memberRepository() {
 //        return new MemoryMemberRepository();
-        return new JdbcMemberRepository(dataSource);
+//        return new JdbcMemberRepository(dataSource);
+        return new JdbcTemplateMemberRepository(dataSource);
     }
 }
